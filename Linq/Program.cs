@@ -29,7 +29,7 @@ namespace LinqWOLinq
                     new Employee{Name="GG", Age=24, DateOfJoining=DateTime.Now.AddYears(-3), Designation="SA", Email="ag@cybage.com", Phone="3445444", Salary=33000.00f},
             };
 
-            IEnumerable<EmployeePersonal> filterEmployees = Employee9Extensions.FilterEmployees(employees);
+            IEnumerable<EmployeePersonal> filterEmployees = Employee0Extensions.FilterEmployees(employees);
             foreach (EmployeePersonal employee in filterEmployees)
             {
                 Console.WriteLine("Employee Name: {0}, Phone Number: {1}, Email Address: {2}, Age: {3}", employee.Name, employee.Phone, employee.Email, employee.Age);
